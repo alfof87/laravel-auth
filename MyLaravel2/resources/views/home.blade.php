@@ -18,7 +18,6 @@
                     @foreach ($emps as $emp)
                       <li class="flex">
                         <a href="{{ route('emp.show', $emp -> id) }}">{{ $emp -> firstname }} {{ $emp -> lastname }}</a>
-                        <a href="{{ route('emp.destroy', $emp -> id) }}"><strong><span id="x">&otimes;</span></strong></a>
                       </li>
                     @endforeach
                     </ul>

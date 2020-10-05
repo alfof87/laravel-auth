@@ -10,18 +10,25 @@
                 <div class="card-body">
                   <ul>
                       <li>
+                        <h3>Employee: {{ $emp -> firstname }} {{ $emp -> lastname }}</h3>
+                      </li>
+                      <li>
                         <img style="width: 90px;height: 100px;" src="https://brighterwriting.com/wp-content/uploads/icon-user-default.png" alt="">
                       </li>
                       <li>
-                        <h4>Date of Birth:</h4>
+                        <strong>Date of Birth:</strong>
                         {{ $emp -> date_of_birth }}
                       </li>
                       <br>
                       <li>
-                        <h4>Private Code:</h4>
+                        <strong>Private Code:</strong>
                         {{ $emp -> private_code }}
                       </li>
                   </ul>
+                  <br><br>
+                  <a class="btn btn-primary" href="#">EDIT</a>
+                  <a class="btn btn-danger" href="{{ route('emp.destroy', $emp -> id)}}">DELETE</a>
+
                 </div>
             </div>
         </div>
