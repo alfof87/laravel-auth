@@ -26,8 +26,10 @@
                       </li>
                   </ul>
                   <br><br>
-                  <a class="btn btn-primary" href="#">EDIT</a>
-                  <a class="btn btn-danger" href="{{ route('emp.destroy', $emp -> id)}}">DELETE</a>
+                  @auth
+                    <a class="btn btn-primary" href="#">EDIT</a>
+                    <a class="btn btn-danger" href="{{ route('emp.destroy', $emp -> id)}}">DELETE</a>
+                  @endauth
 
                 </div>
             </div>
