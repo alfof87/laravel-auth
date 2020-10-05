@@ -10899,3 +10899,22 @@ a.text-dark:focus {
   }
 }
 
+body,
+.card-body,
+nav {
+  background-color: orange;
+}
+
+.card-header,
+.container {
+  background-color: #e67e00;
+}
+
+.navbar {
+  background-color: orange;
+}
+
+a {
+  color: black;
+}
+

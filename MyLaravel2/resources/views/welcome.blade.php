@@ -62,6 +62,9 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            main{
+              background-color: red;
+            }
         </style>
     </head>
     <body>
